@@ -1,0 +1,76 @@
+.d1{
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  right:20px;
+}
+.d2{
+  position: absolute;
+  top: 141px;
+  left: 112px;
+}
+.d3{
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.d4{
+  position: absolute;
+  top: 34px;
+  left: 1251px;
+  right:20px;
+}
+.d5{
+  position: absolute;
+  top: -250px;
+  left: 1151px;
+  right:20px;
+}
+.d6{
+  position: absolute;
+  top: -550px;
+  left: 1251px;
+  right:20px;
+}
+
+/* .d5{
+  position: fixed;
+  right: 0;
+} */
+
+.divi {
+  margin: 100px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: cyan;
+  border-radius: 50px;
+  animation: disc 1.5s infinite linear;
+}
+
+.divi:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-top: 10px solid lightgreen;
+  border-bottom: 10px solid lightgreen;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-radius: 50px;
+  content: '';
+  top: -20px;
+  left: -20px;
+  animation: disc-after 1.5s infinite linear;
+}
+
+@keyframes disc {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg); background: greenyellow;}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes disc-after {
+  0% {border-top:10px solid lightgreen;border-bottom:10px solid lightgreen;}
+  50% {border-top:10px solid cyan;border-bottom:10px solid cyan;
+  100% {border-top:10px solid lightgreen;border-bottom:10px solid lightgreen;}
+}
